@@ -34,7 +34,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Affis Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            +       'TEL; tipo = CELL; tipo = VOZ; waid = 552140420427: +55 21 4042-0427 \ n ' 
+            +       'TEL; tipo = CELL; tipo = VOZ; waid = +12084505597: +1 208 450-5597 \ n ' 
             +  'END: VCARD' 
 prefix = '!'
 blocked = []          
@@ -49,7 +49,7 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
     XBOT: '【🚸🌴 ꦿ⃟꧇۪⃟᮱⟁͢ᜰ᮱★꧇۪𝕭𝑶𝑻🌹💻 】', 
     instagram: 'OFF', 
-    nomer: 'wa.me/552140420427',
+    nomer: 'wa.me/12084505597',
     youtube: 'OFF', 
     whatsapp: 'Comming soon', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
@@ -168,7 +168,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["552140420427@s.whatsapp.net"] 
+			const ownerNumber = ["12084505597@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
