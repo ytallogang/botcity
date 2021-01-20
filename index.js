@@ -34,7 +34,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Affis Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=554191721216:+55 41 9172-1216\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=552140420427:+55 21 4042 0427\n' 
             + 'END:VCARD' 
 prefix = '!'
 blocked = []          
@@ -49,7 +49,7 @@ const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
     XBOT: '【🚸🌴 ꦿ⃟꧇۪⃟᮱⟁͢ᜰ᮱★꧇۪𝕭𝑶𝑻🌹💻 】', 
     instagram: 'OFF', 
-    nomer: 'wa.me/558894125641',
+    nomer: 'wa.me/552140420427',
     youtube: 'OFF', 
     whatsapp: 'Comming soon', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
@@ -168,7 +168,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["554191721216@s.whatsapp.net"] 
+			const ownerNumber = ["552140420427@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -272,7 +272,7 @@ case 'lofi':
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('554191721216@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('552140420427@s.whatsapp.net', options, text, {quoted: mek})
                     reply('PDP PARSA, BUG FOI REPORTADO, SE FOR MENTIRA VAI SER COBRADO🙄✌🏼')
                     break
 					case 'marcar':
